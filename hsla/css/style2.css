@@ -1,0 +1,139 @@
+.bold {
+  font-weight: bold;
+  color: maroon;
+}
+
+.box {
+  height: 64px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  grid-row: 0;
+}
+
+span {
+  display: block;
+  width: 11.1111%;
+  height: 64px;
+}
+
+.box0w span:nth-of-type(1) { background-color: hsl(0, 10%, 50%); }
+.box0w span:nth-of-type(2) { background-color: hsl(0, 20%, 50%); }
+.box0w span:nth-of-type(3) { background-color: hsl(0, 30%, 50%); }
+.box0w span:nth-of-type(4) { background-color: hsl(0, 40%, 50%); }
+.box0w span:nth-of-type(5) { background-color: hsl(0, 50%, 50%); }
+.box0w span:nth-of-type(6) { background-color: hsl(0, 60%, 50%); }
+.box0w span:nth-of-type(7) { background-color: hsl(0, 70%, 50%); }
+.box0w span:nth-of-type(8) { background-color: hsl(0, 80%, 50%); }
+.box0w span:nth-of-type(9) { background-color: hsl(0, 90%, 50%); }
+
+.box1w span:nth-of-type(1) { background-color: hsl(30, 10%, 50%); }
+.box1w span:nth-of-type(2) { background-color: hsl(30, 20%, 50%); }
+.box1w span:nth-of-type(3) { background-color: hsl(30, 30%, 50%); }
+.box1w span:nth-of-type(4) { background-color: hsl(30, 40%, 50%); }
+.box1w span:nth-of-type(5) { background-color: hsl(30, 50%, 50%); }
+.box1w span:nth-of-type(6) { background-color: hsl(30, 60%, 50%); }
+.box1w span:nth-of-type(7) { background-color: hsl(30, 70%, 50%); }
+.box1w span:nth-of-type(8) { background-color: hsl(30, 80%, 50%); }
+.box1w span:nth-of-type(9) { background-color: hsl(30, 90%, 50%); }
+
+.box2w span:nth-of-type(1) { background-color: hsl(60, 10%, 50%); }
+.box2w span:nth-of-type(2) { background-color: hsl(60, 20%, 50%); }
+.box2w span:nth-of-type(3) { background-color: hsl(60, 30%, 50%); }
+.box2w span:nth-of-type(4) { background-color: hsl(60, 40%, 50%); }
+.box2w span:nth-of-type(5) { background-color: hsl(60, 50%, 50%); }
+.box2w span:nth-of-type(6) { background-color: hsl(60, 60%, 50%); }
+.box2w span:nth-of-type(7) { background-color: hsl(60, 70%, 50%); }
+.box2w span:nth-of-type(8) { background-color: hsl(60, 80%, 50%); }
+.box2w span:nth-of-type(9) { background-color: hsl(60, 90%, 50%); }
+
+.box3w span:nth-of-type(1) { background-color: hsl(90, 10%, 50%); }
+.box3w span:nth-of-type(2) { background-color: hsl(90, 20%, 50%); }
+.box3w span:nth-of-type(3) { background-color: hsl(90, 30%, 50%); }
+.box3w span:nth-of-type(4) { background-color: hsl(90, 40%, 50%); }
+.box3w span:nth-of-type(5) { background-color: hsl(90, 50%, 50%); }
+.box3w span:nth-of-type(6) { background-color: hsl(90, 60%, 50%); }
+.box3w span:nth-of-type(7) { background-color: hsl(90, 70%, 50%); }
+.box3w span:nth-of-type(8) { background-color: hsl(90, 80%, 50%); }
+.box3w span:nth-of-type(9) { background-color: hsl(90, 90%, 50%); }
+
+.box4w span:nth-of-type(1) { background-color: hsl(120, 10%, 50%); }
+.box4w span:nth-of-type(2) { background-color: hsl(120, 20%, 50%); }
+.box4w span:nth-of-type(3) { background-color: hsl(120, 30%, 50%); }
+.box4w span:nth-of-type(4) { background-color: hsl(120, 40%, 50%); }
+.box4w span:nth-of-type(5) { background-color: hsl(120, 50%, 50%); }
+.box4w span:nth-of-type(6) { background-color: hsl(120, 60%, 50%); }
+.box4w span:nth-of-type(7) { background-color: hsl(120, 70%, 50%); }
+.box4w span:nth-of-type(8) { background-color: hsl(120, 80%, 50%); }
+.box4w span:nth-of-type(9) { background-color: hsl(120, 90%, 50%); }
+
+.box5w span:nth-of-type(1) { background-color: hsl(150, 10%, 50%); }
+.box5w span:nth-of-type(2) { background-color: hsl(150, 20%, 50%); }
+.box5w span:nth-of-type(3) { background-color: hsl(150, 30%, 50%); }
+.box5w span:nth-of-type(4) { background-color: hsl(150, 40%, 50%); }
+.box5w span:nth-of-type(5) { background-color: hsl(150, 50%, 50%); }
+.box5w span:nth-of-type(6) { background-color: hsl(150, 60%, 50%); }
+.box5w span:nth-of-type(7) { background-color: hsl(150, 70%, 50%); }
+.box5w span:nth-of-type(8) { background-color: hsl(150, 80%, 50%); }
+.box5w span:nth-of-type(9) { background-color: hsl(150, 90%, 50%); }
+
+.box6w span:nth-of-type(1) { background-color: hsl(180, 10%, 50%); }
+.box6w span:nth-of-type(2) { background-color: hsl(180, 20%, 50%); }
+.box6w span:nth-of-type(3) { background-color: hsl(180, 30%, 50%); }
+.box6w span:nth-of-type(4) { background-color: hsl(180, 40%, 50%); }
+.box6w span:nth-of-type(5) { background-color: hsl(180, 50%, 50%); }
+.box6w span:nth-of-type(6) { background-color: hsl(180, 60%, 50%); }
+.box6w span:nth-of-type(7) { background-color: hsl(180, 70%, 50%); }
+.box6w span:nth-of-type(8) { background-color: hsl(180, 80%, 50%); }
+.box6w span:nth-of-type(9) { background-color: hsl(180, 90%, 50%); }
+
+.box7w span:nth-of-type(1) { background-color: hsl(210, 10%, 50%); }
+.box7w span:nth-of-type(2) { background-color: hsl(210, 20%, 50%); }
+.box7w span:nth-of-type(3) { background-color: hsl(210, 30%, 50%); }
+.box7w span:nth-of-type(4) { background-color: hsl(210, 40%, 50%); }
+.box7w span:nth-of-type(5) { background-color: hsl(210, 50%, 50%); }
+.box7w span:nth-of-type(6) { background-color: hsl(210, 60%, 50%); }
+.box7w span:nth-of-type(7) { background-color: hsl(210, 70%, 50%); }
+.box7w span:nth-of-type(8) { background-color: hsl(210, 80%, 50%); }
+.box7w span:nth-of-type(9) { background-color: hsl(210, 90%, 50%); }
+
+.box8w span:nth-of-type(1) { background-color: hsl(240, 10%, 50%); }
+.box8w span:nth-of-type(2) { background-color: hsl(240, 20%, 50%); }
+.box8w span:nth-of-type(3) { background-color: hsl(240, 30%, 50%); }
+.box8w span:nth-of-type(4) { background-color: hsl(240, 40%, 50%); }
+.box8w span:nth-of-type(5) { background-color: hsl(240, 50%, 50%); }
+.box8w span:nth-of-type(6) { background-color: hsl(240, 60%, 50%); }
+.box8w span:nth-of-type(7) { background-color: hsl(240, 70%, 50%); }
+.box8w span:nth-of-type(8) { background-color: hsl(240, 80%, 50%); }
+.box8w span:nth-of-type(9) { background-color: hsl(240, 90%, 50%); }
+
+.box9w span:nth-of-type(1) { background-color: hsl(270, 10%, 50%); }
+.box9w span:nth-of-type(2) { background-color: hsl(270, 20%, 50%); }
+.box9w span:nth-of-type(3) { background-color: hsl(270, 30%, 50%); }
+.box9w span:nth-of-type(4) { background-color: hsl(270, 40%, 50%); }
+.box9w span:nth-of-type(5) { background-color: hsl(270, 50%, 50%); }
+.box9w span:nth-of-type(6) { background-color: hsl(270, 60%, 50%); }
+.box9w span:nth-of-type(7) { background-color: hsl(270, 70%, 50%); }
+.box9w span:nth-of-type(8) { background-color: hsl(270, 80%, 50%); }
+.box9w span:nth-of-type(9) { background-color: hsl(270, 90%, 50%); }
+
+.box10w span:nth-of-type(1) { background-color: hsl(300, 10%, 50%); }
+.box10w span:nth-of-type(2) { background-color: hsl(300, 20%, 50%); }
+.box10w span:nth-of-type(3) { background-color: hsl(300, 30%, 50%); }
+.box10w span:nth-of-type(4) { background-color: hsl(300, 40%, 50%); }
+.box10w span:nth-of-type(5) { background-color: hsl(300, 50%, 50%); }
+.box10w span:nth-of-type(6) { background-color: hsl(300, 60%, 50%); }
+.box10w span:nth-of-type(7) { background-color: hsl(300, 70%, 50%); }
+.box10w span:nth-of-type(8) { background-color: hsl(300, 80%, 50%); }
+.box10w span:nth-of-type(9) { background-color: hsl(300, 90%, 50%); }
+
+.box11w span:nth-of-type(1) { background-color: hsl(330, 10%, 50%); }
+.box11w span:nth-of-type(2) { background-color: hsl(330, 20%, 50%); }
+.box11w span:nth-of-type(3) { background-color: hsl(330, 30%, 50%); }
+.box11w span:nth-of-type(4) { background-color: hsl(330, 40%, 50%); }
+.box11w span:nth-of-type(5) { background-color: hsl(330, 50%, 50%); }
+.box11w span:nth-of-type(6) { background-color: hsl(330, 60%, 50%); }
+.box11w span:nth-of-type(7) { background-color: hsl(330, 70%, 50%); }
+.box11w span:nth-of-type(8) { background-color: hsl(330, 80%, 50%); }
+.box11w span:nth-of-type(9) { background-color: hsl(330, 90%, 50%); }

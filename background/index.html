@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Background</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Фон </h1>
+		<p>Yours Truly, Famous Inc.</p>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Background</h2>
+		<p>Основное CSS свойство :-)</p>
+		<figure>
+			<img class="cover" src="pictures/pattern1.png" alt="pattern">
+		</figure>
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+
+	<section class="slide examle">
+		<h2>Цвет фона и изображение.</h2>
+		<pre>
+			<code>background: #1e5799 url(../pictures/pattern.png);</code>
+		</pre>
+		<dl>
+			<dt>Верхний слой</dt>
+			<dd>контент</dd>
+			<dt>Средний слой</dt>
+			<dd>фоновое изображение</dd>
+			<dt>Основание</dt>
+			<dd>цвет фона</dd>
+		</dl>
+		<img src="pictures/layers.png" alt="layers">
+	</section>
+
+	<section class="slide slide-bg">
+		<p>background-repeat: no-repeat;</p>
+		<div class="box1 box">&nbsp;</div>
+		<p>background-repeat: repeat; <span class="comment">// паттерн может быть обрезан по краю</span></p>
+		<div class="box2 box">&nbsp;</div>
+	</section>
+
+	<section class="slide slide-bg">
+    <div class="fl-left">
+		  <p>background-repeat: repeat-x;</p>
+		  <div class="box3 box">&nbsp; </div>
+		</div>
+		<div class="fl-right">
+		  <p>background-repeat: repeat-y;</p>
+		  <div class="box4 box">&nbsp;</div>
+		</div>
+	</section>
+
+	<section class="slide slide-bg">
+		<p>background-repeat: space; <span class="comment">// между паттернами добавляются пробелы чтобы заполнить фон без искажений</span></p>
+    <div class="box5">&nbsp;</div>
+	</section>
+
+	<section class="slide slide-bg">
+		<p>background-repeat: round; <span class="comment">// паттерн меняет размеры чтобы заполнить фон без искажений</span></p>
+    <div class="box6">&nbsp;</div>
+	</section>
+
+	<section class="slide slide-bg">
+		<h2> background-size</h2>
+		<div class="box-left">
+			<p>background-size: contain;
+			</p>
+			<span class="comment"> Максимальный размер выбирается таким образом, чтобы заполнить фон <srtong>без обрезания</srtong> и без искажений.</span>
+      <div class="box7">&nbsp;</div>
+		</div>
+		<div class="box-right">
+			<p>background-size: cover;</p>
+			<span class="comment"> Максимальный размер выбирается таким образом, чтобы заполнить фон полностью или по высоте или по ширине <srtong>с обрезанием</srtong>, но без искажений.</span>
+      <div class="box8">&nbsp;</div>
+	  </div>
+	</section>
+
+	<section class="slide slide-bg">
+		<h2> background-size: x y;</h2>
+		<div class="box-left">
+			<p>background-size: 100% 50%;
+			</p>
+			<span class="comment"> Размер изображения в %  от <srtong>размеров контейнера</srtong> с искажениями.</span>
+      <div class="box9">&nbsp;</div>
+		</div>
+		<div class="box-right">
+			<p>background-size:  300px auto;</p>
+			<span class="comment">Размер изображения с одним числовым занчением и вторым auto <srtong> без искажений</srtong>.</span>
+      <div class="box10">&nbsp;</div>
+	  </div>
+	</section>
+
+	<section class="slide slide-bg">
+		<h2> Несколько background-size: x y, x y, x y; </h2>
+		<div class="box-left">
+      <div class="box11">&nbsp;</div>
+		</div>
+		<div class="box-right">
+			<pre>
+				<p class="code">background:  url(../img/top-img.png) 50% 50% no-repeat,</p>
+				<p class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					url(../img/middle-img.png) 50% 50% no-repeat,
+				</p>
+				<p class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					url(../img/bottom-img.png);
+				</p>
+				<p class="code">background-position: center right, 70px 50px, center;</p>
+			</pre>
+	  </div>
+	</section>
+
+	<section class="slide slide-bg">
+		<h2> background-position: x y; </h2>
+		<p>Это позиционирование существенно отличается от box-model.</p>
+		<p>Смещение происходит в два этапа.</p>
+		<p>1)смещается точка отсчета изображения на x y относительно верхнего левого угла самого изображения в %</p>
+		<p>2)к точке отсчета изображения применяется смещение x и y</p>
+		 <img src="../pictures/bg-positions.png" alt="bg-positions">
+	</section>
+
+	<section class="slide slide-bg">
+		<h2>background-attachment</h2>
+		<div class="box-left">
+			<p>background-attachment: fixed;</p>
+			<!-- <span class="comment"> Размер изображения в %  от <srtong>размеров контейнера</srtong> с искажениями.</span> -->
+			<div class="box12">&nbsp;
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid enim placeat praesentium dolorum quaerat quia, sunt dicta veritatis doloremque aperiam, fugiat perferendis blanditiis voluptatem. Sequi facilis a perspiciatis tenetur magnam illo deleniti, quia sit, recusandae, provident rerum vel aliquid id earum. Aspernatur quis architecto ad, error obcaecati enim optio dolor.</p>
+			</div>
+		</div>
+		<div class="box-right">
+			<p>background-attachment: local;</p>
+			<!-- <span class="comment">Размер изображения с одним числовым занчением и вторым auto <srtong> без искажений</srtong>.</span> -->
+			<div class="box13">&nbsp;
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, impedit, cum. Dolores architecto molestias assumenda possimus minima similique iusto amet sint, quasi sequi iste aliquid alias facere vero, sunt optio tempore blanditiis, laborum explicabo debitis. Eius blanditiis harum impedit doloribus, deserunt sit laudantium tempore laboriosam accusantium dignissimos officiis veritatis sapiente!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide slide-bg">
+		<h2><a href="bg-attachment.html">background-attachment</a></h2>
+
+		<div class="box-left">
+			<p>background-attachment: fixed;</p>
+			<!-- <span class="comment"> Размер изображения в %  от <srtong>размеров контейнера</srtong> с искажениями.</span> -->
+			<div class="box14">&nbsp;
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid enim placeat praesentium dolorum quaerat quia, sunt dicta veritatis doloremque aperiam, fugiat perferendis blanditiis voluptatem. Sequi facilis a perspiciatis tenetur magnam illo deleniti, quia sit, recusandae, provident rerum vel aliquid id earum. Aspernatur quis architecto ad, error obcaecati enim optio dolor.</p>
+			</div>
+		</div>
+		<div class="box-right">
+			<p>background-attachment: scroll;</p>
+			<!-- <span class="comment">Размер изображения с одним числовым занчением и вторым auto <srtong> без искажений</srtong>.</span> -->
+			<div class="box15">&nbsp;
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, impedit, cum. Dolores architecto molestias assumenda possimus minima similique iusto amet sint, quasi sequi iste aliquid alias facere vero, sunt optio tempore blanditiis, laborum explicabo debitis. Eius blanditiis harum impedit doloribus, deserunt sit laudantium tempore laboriosam accusantium dignissimos officiis veritatis sapiente!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide grid">
+		<h2>Спасибо за внимание!</h2>
+	</section>
+
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>

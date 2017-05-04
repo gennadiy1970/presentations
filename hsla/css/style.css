@@ -1,0 +1,140 @@
+.bold {
+  font-weight: bold;
+  color: maroon;
+}
+
+.box {
+  height: 64px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  grid-row: 0;
+}
+
+span {
+  display: block;
+  width: 11.1111%;
+  height: 64px;
+}
+
+.box0 span:nth-of-type(1) { background-color: hsl(0, 50%, 10%); }
+.box0 span:nth-of-type(2) { background-color: hsl(0, 50%, 20%); }
+.box0 span:nth-of-type(3) { background-color: hsl(0, 50%, 30%); }
+.box0 span:nth-of-type(4) { background-color: hsl(0, 50%, 40%); }
+.box0 span:nth-of-type(5) { background-color: hsl(0, 50%, 50%); }
+.box0 span:nth-of-type(6) { background-color: hsl(0, 50%, 60%); }
+.box0 span:nth-of-type(7) { background-color: hsl(0, 50%, 70%); }
+.box0 span:nth-of-type(8) { background-color: hsl(0, 50%, 80%); }
+.box0 span:nth-of-type(9) { background-color: hsl(0, 50%, 90%); }
+
+.box1 span:nth-of-type(1) { background-color: hsl(30, 50%, 10%); }
+.box1 span:nth-of-type(2) { background-color: hsl(30, 50%, 20%); }
+.box1 span:nth-of-type(3) { background-color: hsl(30, 50%, 30%); }
+.box1 span:nth-of-type(4) { background-color: hsl(30, 50%, 40%); }
+.box1 span:nth-of-type(5) { background-color: hsl(30, 50%, 50%); }
+.box1 span:nth-of-type(6) { background-color: hsl(30, 50%, 60%); }
+.box1 span:nth-of-type(7) { background-color: hsl(30, 50%, 70%); }
+.box1 span:nth-of-type(8) { background-color: hsl(30, 50%, 80%); }
+.box1 span:nth-of-type(9) { background-color: hsl(30, 50%, 90%); }
+
+.box2 span:nth-of-type(1) { background-color: hsl(60, 50%, 10%); }
+.box2 span:nth-of-type(2) { background-color: hsl(60, 50%, 20%); }
+.box2 span:nth-of-type(3) { background-color: hsl(60, 50%, 30%); }
+.box2 span:nth-of-type(4) { background-color: hsl(60, 50%, 40%); }
+.box2 span:nth-of-type(5) { background-color: hsl(60, 50%, 50%); }
+.box2 span:nth-of-type(6) { background-color: hsl(60, 50%, 60%); }
+.box2 span:nth-of-type(7) { background-color: hsl(60, 50%, 70%); }
+.box2 span:nth-of-type(8) { background-color: hsl(60, 50%, 80%); }
+.box2 span:nth-of-type(9) { background-color: hsl(60, 50%, 90%); }
+
+.box3 span:nth-of-type(1) { background-color: hsl(90, 50%, 10%); }
+.box3 span:nth-of-type(2) { background-color: hsl(90, 50%, 20%); }
+.box3 span:nth-of-type(3) { background-color: hsl(90, 50%, 30%); }
+.box3 span:nth-of-type(4) { background-color: hsl(90, 50%, 40%); }
+.box3 span:nth-of-type(5) { background-color: hsl(90, 50%, 50%); }
+.box3 span:nth-of-type(6) { background-color: hsl(90, 50%, 60%); }
+.box3 span:nth-of-type(7) { background-color: hsl(90, 50%, 70%); }
+.box3 span:nth-of-type(8) { background-color: hsl(90, 50%, 80%); }
+.box3 span:nth-of-type(9) { background-color: hsl(90, 50%, 90%); }
+
+.box4 span:nth-of-type(1) { background-color: hsl(120, 50%, 10%); }
+.box4 span:nth-of-type(2) { background-color: hsl(120, 50%, 20%); }
+.box4 span:nth-of-type(3) { background-color: hsl(120, 50%, 30%); }
+.box4 span:nth-of-type(4) { background-color: hsl(120, 50%, 40%); }
+.box4 span:nth-of-type(5) { background-color: hsl(120, 50%, 50%); }
+.box4 span:nth-of-type(6) { background-color: hsl(120, 50%, 60%); }
+.box4 span:nth-of-type(7) { background-color: hsl(120, 50%, 70%); }
+.box4 span:nth-of-type(8) { background-color: hsl(120, 50%, 80%); }
+.box4 span:nth-of-type(9) { background-color: hsl(120, 50%, 90%); }
+
+.box5 span:nth-of-type(1) { background-color: hsl(150, 50%, 10%); }
+.box5 span:nth-of-type(2) { background-color: hsl(150, 50%, 20%); }
+.box5 span:nth-of-type(3) { background-color: hsl(150, 50%, 30%); }
+.box5 span:nth-of-type(4) { background-color: hsl(150, 50%, 40%); }
+.box5 span:nth-of-type(5) { background-color: hsl(150, 50%, 50%); }
+.box5 span:nth-of-type(6) { background-color: hsl(150, 50%, 60%); }
+.box5 span:nth-of-type(7) { background-color: hsl(150, 50%, 70%); }
+.box5 span:nth-of-type(8) { background-color: hsl(150, 50%, 80%); }
+.box5 span:nth-of-type(9) { background-color: hsl(150, 50%, 90%); }
+
+.box6 span:nth-of-type(1) { background-color: hsl(180, 50%, 10%); }
+.box6 span:nth-of-type(2) { background-color: hsl(180, 50%, 20%); }
+.box6 span:nth-of-type(3) { background-color: hsl(180, 50%, 30%); }
+.box6 span:nth-of-type(4) { background-color: hsl(180, 50%, 40%); }
+.box6 span:nth-of-type(5) { background-color: hsl(180, 50%, 50%); }
+.box6 span:nth-of-type(6) { background-color: hsl(180, 50%, 60%); }
+.box6 span:nth-of-type(7) { background-color: hsl(180, 50%, 70%); }
+.box6 span:nth-of-type(8) { background-color: hsl(180, 50%, 80%); }
+.box6 span:nth-of-type(9) { background-color: hsl(180, 50%, 90%); }
+
+.box7 span:nth-of-type(1) { background-color: hsl(210, 50%, 10%); }
+.box7 span:nth-of-type(2) { background-color: hsl(210, 50%, 20%); }
+.box7 span:nth-of-type(3) { background-color: hsl(210, 50%, 30%); }
+.box7 span:nth-of-type(4) { background-color: hsl(210, 50%, 40%); }
+.box7 span:nth-of-type(5) { background-color: hsl(210, 50%, 50%); }
+.box7 span:nth-of-type(6) { background-color: hsl(210, 50%, 60%); }
+.box7 span:nth-of-type(7) { background-color: hsl(210, 50%, 70%); }
+.box7 span:nth-of-type(8) { background-color: hsl(210, 50%, 80%); }
+.box7 span:nth-of-type(9) { background-color: hsl(210, 50%, 90%); }
+
+.box8 span:nth-of-type(1) { background-color: hsl(240, 50%, 10%); }
+.box8 span:nth-of-type(2) { background-color: hsl(240, 50%, 20%); }
+.box8 span:nth-of-type(3) { background-color: hsl(240, 50%, 30%); }
+.box8 span:nth-of-type(4) { background-color: hsl(240, 50%, 40%); }
+.box8 span:nth-of-type(5) { background-color: hsl(240, 50%, 50%); }
+.box8 span:nth-of-type(6) { background-color: hsl(240, 50%, 60%); }
+.box8 span:nth-of-type(7) { background-color: hsl(240, 50%, 70%); }
+.box8 span:nth-of-type(8) { background-color: hsl(240, 50%, 80%); }
+.box8 span:nth-of-type(9) { background-color: hsl(240, 50%, 90%); }
+
+.box9 span:nth-of-type(1) { background-color: hsl(270, 50%, 10%); }
+.box9 span:nth-of-type(2) { background-color: hsl(270, 50%, 20%); }
+.box9 span:nth-of-type(3) { background-color: hsl(270, 50%, 30%); }
+.box9 span:nth-of-type(4) { background-color: hsl(270, 50%, 40%); }
+.box9 span:nth-of-type(5) { background-color: hsl(270, 50%, 50%); }
+.box9 span:nth-of-type(6) { background-color: hsl(270, 50%, 60%); }
+.box9 span:nth-of-type(7) { background-color: hsl(270, 50%, 70%); }
+.box9 span:nth-of-type(8) { background-color: hsl(270, 50%, 80%); }
+.box9 span:nth-of-type(9) { background-color: hsl(270, 50%, 90%); }
+
+.box10 span:nth-of-type(1) { background-color: hsl(300, 50%, 10%); }
+.box10 span:nth-of-type(2) { background-color: hsl(300, 50%, 20%); }
+.box10 span:nth-of-type(3) { background-color: hsl(300, 50%, 30%); }
+.box10 span:nth-of-type(4) { background-color: hsl(300, 50%, 40%); }
+.box10 span:nth-of-type(5) { background-color: hsl(300, 50%, 50%); }
+.box10 span:nth-of-type(6) { background-color: hsl(300, 50%, 60%); }
+.box10 span:nth-of-type(7) { background-color: hsl(300, 50%, 70%); }
+.box10 span:nth-of-type(8) { background-color: hsl(300, 50%, 80%); }
+.box10 span:nth-of-type(9) { background-color: hsl(300, 50%, 90%); }
+
+.box11 span:nth-of-type(1) { background-color: hsl(330, 50%, 10%); }
+.box11 span:nth-of-type(2) { background-color: hsl(330, 50%, 20%); }
+.box11 span:nth-of-type(3) { background-color: hsl(330, 50%, 30%); }
+.box11 span:nth-of-type(4) { background-color: hsl(330, 50%, 40%); }
+.box11 span:nth-of-type(5) { background-color: hsl(330, 50%, 50%); }
+.box11 span:nth-of-type(6) { background-color: hsl(330, 50%, 60%); }
+.box11 span:nth-of-type(7) { background-color: hsl(330, 50%, 70%); }
+.box11 span:nth-of-type(8) { background-color: hsl(330, 50%, 80%); }
+.box11 span:nth-of-type(9) { background-color: hsl(330, 50%, 90%); }
+/*=====================================================================*/

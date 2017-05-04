@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Position</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="shower list">
+
+	<section class="slide" id="cover">
+		<h2>CSS: position </h2>
+		<img class="cover" src="pictures/cover.jpg" alt="CSS">
+	</section>
+
+	<section class="slide">
+		<h2>Нормальный поток выполнения</h2>
+		<p><kbd>position: <span class="red">static</span>;</kbd></p>
+		<p>свойства <kbd class="red">top</kbd>, <kbd class="red">left</kbd>, <kbd class="red">right</kbd>, <kbd class="red">bottom</kbd> не работают</p>
+		<div class="box one">One</div>
+		<div class="box two">Two</div>
+		<div class="box three">Three</div>
+		<div class="box four">Four</div>
+	</section>
+
+	<section class="slide">
+		<h2>Нормальный поток выполнения</h2>
+		<p><kbd>position: <span class="red">relative</span>;</kbd></p>
+		<p>свойства <kbd class="red">top</kbd>, <kbd class="red">left</kbd>, <kbd class="red">right</kbd>, <kbd class="red">bottom</kbd> работают</p>
+		<p>место блока <strong>сохранятся</strong> в потоке, сам блок может перемещаться</p>
+		<div class="container">
+			<div class="box one">One</div>
+			<div class="box two">Two</div>
+			<div class="box three three-r">Three<br><br>relative <br>top: 50px;<br>left: -50px;</div>
+			<div class="box four">Four</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Вне потока выполнения</h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>position: <span class="red">absolute</span>;</kbd></p>
+		<p>свойства <kbd class="red">top</kbd>, <kbd class="red">left</kbd>, <kbd class="red">right</kbd>, <kbd class="red">bottom</kbd> работают</p>
+		<p>место блока <strong>не сохранятся</strong> в потоке, блок может перемещаться относительно предка без position: static или body</p>
+		<div class="box one">One</div>
+		<div class="box two">Two</div>
+		<div class="box three three-a">Three<br><br>relative <br>top: 0;<br>left: 0;</div>
+		<div class="box four">Four</div>
+		<p class="comment">по умолчанию top:0; и left:0; </p>
+	</section>
+
+	<section class="slide">
+		<h2>Вне потока выполнения</h2>
+		<p><kbd>position: <span class="red">absolute</span>;</kbd></p>
+		<p>прием с <kbd class="red">::before</kbd></p>
+		<p>контейнеру parent задают<kbd>position: relative</kbd> а псевдоэлементу <kbd>::before { position: absolute;}</kbd></p>
+		<div class="box one">One</div>
+		<div class="box two">Two</div>
+		<div class="box three three-a-before">Three</div>
+		<div class="box four">Four</div>
+		<img src="pictures\before.jpg" alt="before" width="250">
+	</section>
+
+	<section class="slide">
+		<h2>Вне потока выполнения</h2>
+		<p><kbd><span class="red">z-index</span></kbd></p>
+		<p><strong>контекст выполнения</strong> элементы <span class="red">соседи</span> с <kbd>position: absolute</kbd> <strong>реагируют</strong> на z-index
+		</p>
+		<div class="box one">One</div>
+		<div class="box two two-z-r z9">Two</div>
+		<div class="box three three-z-r ">Three</div>
+		<div class="box four four-z-r">Four</div>
+		<img src="pictures\zondex-n.jpg" alt="zondex-n" width="500">
+	</section>
+
+	<section class="slide">
+		<h2>Вне потока выполнения</h2>
+		<p><kbd><span class="red">z-index</span></kbd></p>
+		<p><strong>контекст выполнения</strong> элементы <span class="red">потомки</span> с <kbd>position: absolute</kbd> <strong>не реагируют</strong> на z-index
+		</p>
+		<div class="box one w">One
+			<div class="box two two-z z9">Two
+				<div class="box three three-z ">Three
+					<div class="box four four-z">Four</div>
+				</div>
+			</div>
+		</div>
+		<img src="pictures\zondex-p.jpg" alt="zondex-p" width="500">
+	</section>
+  <section class="slide">
+			<h2>Спасибо за внимание!</h2>
+	</section>
+
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
