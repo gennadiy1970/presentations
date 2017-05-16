@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Skew</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h2>Skew</h2>
+      <p>
+        transform:
+        <span class="red"> skew(<em class="grey">x, y</em>)</span> ||
+        <span class="red">skewX(<em class="grey">x</em>) </span> ||
+        <span class="red">skew(<em class="grey">y</em>) </span>
+      </p>
+      <form class="units">
+        unit:
+        <label>
+          <em>from 0 to 360</em>
+          <input type="radio" name="unit" value="deg" checked>
+          <span class="red"><strong>&nbsp;deg</strong></span>
+        </label>
+         <label>
+          <em>from 0 to 400</em>
+          <input type="radio" name="unit"  value="grad">
+          <span class="red"><strong>grad</strong></span>
+         </label>
+         <label>
+           <em>from 0 to 6.2832</em>
+           <input type="radio" name="unit" value="rad">
+           <span class="red"><strong>&nbsp;&nbsp;rad</strong></span>
+         </label>
+         <label>
+           <em>from 0 to 1</em>
+           <input type="radio" name="unit" value="turn">
+           <span class="red"><strong>&nbsp;turn</strong></span>
+         </label>
+      </form>
+    </div>
+    <form class="controls">
+
+      <label>skew
+        (<input type="number" name="skewX" value="0" class="two">,
+        <input type="number" name="skewY" value="0" class="two">)
+      </label>
+
+      <label>skewX
+        <input type="number" name="skewX" value="0" class="one">
+      </label>
+
+      <label>skewY
+        <input type="number" name="skewY" value="0" class="one">
+      </label>
+
+    </form>
+    <div class="image">
+      <img id="image" src="http://pipsum.com/800x500.jpg" alt="image">
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

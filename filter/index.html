@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>filter</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h2>Filter</h2>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;filter: <span class="red">grayscale</span> ||
+        <span class="red">blur</span> ||
+        <span class="red">brightness</span> ||
+        <span class="red">contrast</span> ||
+        <span class="red">hue-rotate</span> ||
+        <span class="red">invert</span> ||
+        <span class="red">opacity</span> ||
+        <span class="red">saturate</span> ||
+        <span class="red">sepia</span>
+      </p>
+    </div>
+    <div class="controls">
+
+      <label for="spacing">grayscale:
+        <input type="range" name="grayscale" min="0" max="100" value="0" step="10" data-sizing="%">
+      </label>
+      <label>blur:
+        <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+      </label>
+      <label>brightness:
+        <input type="range" name="brightness" min="0" max="100" value="100" data-sizing="%">
+      </label>
+      <label>contrast:
+        <input type="range" name="contrast" min="0" max="100" value="100" data-sizing="%">
+      </label>
+      <label>hue-rotate:
+        <input type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+      </label>
+      <label>invert:
+        <input type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+      </label>
+      <label>opacity:
+        <input type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
+      </label>
+      <label>saturate:
+        <input type="range" name="saturate" min="0" max="100" value="100" data-sizing="%">
+      </label>
+      <label>sepia:
+        <input type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+      </label>
+    </div>
+    <div class="image">
+      <img src="http://pipsum.com/800x500.jpg" alt="image">
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

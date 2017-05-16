@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML Forms</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shower list">
+
+
+	<section class="slide" id="cover">
+		<h2>HTML Forms</h2>
+		<!-- <p>Взаимодействие с пользователем </p> -->
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park" width="900">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Формы: хранение данных</h2>
+    <p>Один из популярных видов хранения данных это запись
+			<strong>ключ= значение</strong>
+		</p>
+		<p>Ключи в пределах одного документа должны быть
+			<strong>уникальны</strong>.
+		</p>
+		 <p>Пример: пара "атрибут тега"
+			<kbd> &lt;img src="logo.jpg" &gt;</kbd><br>
+			 ключ - <strong>src</strong>, значение <strong>logo.jpg</strong>
+		 </p>
+	</section>
+
+	<section class="slide">
+		<h2>Формы: задаем ключ и задаем значение</h2>
+    <p>Пару	<strong>ключ= значение</strong> можно использовать чтобы задать произвольный ключ:
+       <kbd>key="one"</kbd> и произвольное значение  <kbd>value="some"</kbd>
+		</p>
+		<p>Именно так в <kbd>&lt;input&gt;</kbd> задается ключ - с помощью
+			<strong>атрибута <span class="red">name</span></strong> и значение - с помощью
+			<strong>атрибута <span class="red">value</span></strong>. При этом
+			<strong> <span class="red">value</span></strong> может перезаписаться
+			пользовательским значением.
+		</p>
+		 <p>Пример: пара <span class="red">name: value;</span>
+			 <kbd>&lt;input type="range" <span class="red">name</span>="<strong>volume</strong>" <span class="red">value</span>="<strong>0.5</strong>" min="0" max="1" step="0.1"&gt;</kbd><br>
+			 ключ - <strong>volume</strong>, значение <strong>0.5</strong>
+			 <a href="helloworld.html"  target="_blank">
+				 Посмотреть работающий пример
+			 </a>
+		 </p>
+	</section>
+
+	<section class="slide">
+		<h2>Формы: генерация пар "ключ-значение"</h2>
+		<kbd>
+		&lt;<strong>form</strong> action="#"&gt; <span class="comment">// "#" - адрес, куда будут направлены данные</span><br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="text" <span class="red">name</span>="login" placeholder="login"&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="text" <span class="red">name</span>="pass" placeholder="pass"&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="submit"&gt;<br>
+		&lt;<strong>/form</strong>&gt;<br>
+	</kbd>
+	  <h4>Если ввести логин "cool" и pass "123", то в результате в строке браузера будет подобный текст:</h4>
+		<kbd>
+			<strong>keyvalue.html</strong>?<span class="red">login=</span>cool&amp;<span class="red">pass=</span>123<strong>#</strong></kbd><br>
+		<a href="keyvalue.html" target="_blank">Посмотреть работающий пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>method GET vs POST - скрываем данные</h2>
+		<kbd>
+		&lt;<strong>form</strong> action="#" <span class="red">method="post"</span>&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="text" name="login" placeholder="login"&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="text" name="pass" placeholder="pass"&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="submit"&gt;<br>
+		&lt;<strong>/form</strong>&gt;<br>
+	</kbd>
+	  <h4>Метод POST выносит данные из заголовка сообщения. В результате в строке браузера будет подобный текст:</h4>
+		<kbd class="red"> keyvalue.html#</kbd> <span class="comment">// в строке остался только адрес из action</span><br>
+		<a href="keyvalue-post.html" target="_blank">Посмотреть работающий пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>INPUT атрибут <span class="red">required</span><br> и значение type <span class="red">password</span></h2>
+		<kbd>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="<span class="red">password</span>" name="login" placeholder="login"  <span class="red">required</span>&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="<span class="red">password</span>" name="pass" placeholder="pass"  <span class="red">required</span>&gt;<br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="submit"&gt;<br>
+	</kbd>
+	  <h4>В строке <strong>input</strong> будут * вместо знаков</h4>
+		<h4>Браузер сообщит об ошибке если не заполнено поле INPUT</h4>
+		<a href="keyvalue-pass.html" target="_blank">Посмотреть работающий пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>INPUT атрибут <span class="red">email</span><br> </h2>
+		<kbd>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="<span class="red">email</span>" name="nick" placeholder="email"&gt;  <br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="<span class="red">password</span>" name="pass" placeholder="pass"&gt;  <br>
+			&nbsp;&nbsp;&lt;<strong>input</strong> type="submit"&gt;<br>
+	</kbd>
+	  <h4>type="<span class="red">email</span>" проверит на валидность введеный адрес
+		и браузер сообщит об ошибке если ее обнаружит</h4>
+		<a href="keyvalue-mail.html" target="_blank">Посмотреть работающий пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>Label </h2>
+		<h4>Расположение текста:</h4>
+			<span class="red">left:</span> &nbsp;&nbsp;&nbsp;&nbsp;<label>Текст<input type="text"></label><br>
+			<kbd>
+			  &nbsp;&nbsp;&lt;<strong>label</strong>&gt;<span class="red">Текст</span>&lt;<strong>input</strong> type="text"&gt;&lt;<strong>label</strong>&gt;
+		  </kbd><br>
+			<span class="red">right:</span>&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="text">Текст</label><br>
+			<kbd>
+			  &nbsp;&nbsp;&lt;<strong>label</strong>&gt;&lt;<strong>input</strong> type="text"&gt;<span class="red">Текст</span>&lt;<strong>label</strong>&gt;
+		  </kbd><br>
+	</section>
+
+	<section class="slide">
+		<h2>Label </h2>
+		<h4>Кликабельность текста checkbox и radio:</h4>
+			<span class="red">for - id:</span> &nbsp;&nbsp;&nbsp;&nbsp;<label for="id">Текст</label><input type="checkbox" id="id"><br>
+			<kbd>
+			  &nbsp;&nbsp;&lt;<strong>label</strong> <span class="red">for="id"</span>&gt;Текст&lt;<strong>label</strong>&gt;<br>
+				&nbsp;&nbsp;&lt;<strong>input</strong> type="checkbox" id="id"&gt;
+		  </kbd><br>
+			<span class="red">label - input - label</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="radio" name="rd">Текст 1</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="radio" name="rd">Текст 2</label><br>
+			<kbd>
+			  &nbsp;&nbsp;&lt;<strong>label</strong>&gt;&lt;<strong>input</strong> type="radio" name="rd"&gt;<span class="red">Текст 1</span>&lt;<strong>label</strong>&gt;
+			  &nbsp;&nbsp;&lt;<strong>label</strong>&gt;&lt;<strong>input</strong> type="radio" name="rd"&gt;<span class="red">Текст 2</span>&lt;<strong>label</strong>&gt;
+		  </kbd><br>
+	</section>
+
+	<section class="slide">
+		<h2>Расположение input вне form:</h2>
+		<kbd>
+		&nbsp;&nbsp;&lt;<strong>form</strong> action="#" method="get" <span class="red">id="id"</span>&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" name="nick" placeholder="email"&gt;<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit"&gt;<br>
+	  &nbsp;&nbsp;&lt;<strong>/form</strong>&gt;<br>
+&nbsp;&nbsp;&lt;input type="password" name="pass" placeholder="pass" <span class="red">form="id"</span>&gt;
+</kbd><br>
+		<a href="keyvalue-name.html" target="_blank">Пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>Одинаковые <span class="red">name</span>:</h2>
+     <ol>
+     	<li>Обязательны для создания группы radio <span class="comment">// value - уникально</span></li>
+     	<li>Одинаковые ключи <strong>могут быть перезаписаны</strong> последним value из группы на стороне сервера с PHP - важно для freelance и foolstack	developer</li>
+     </ol>
+		<a href="keyvalue-uniq.html" target="_blank">Пример</a>
+	</section>
+
+	<section class="slide">
+		<h2>Forms and CSS</h2>
+		<h4>В CSS нет специальных правил для форм.</h4>
+		<p>Часть форм получает данные о своем внешеним виде от операционной системы, например: <br>
+			<label>radio <input type="radio"></label>	&nbsp;&nbsp;	<label>checkbox <input type="checkbox"></label>
+		</p>
+		<p>Изменить вид таких элементов можно, скрыв дефолтный вид и подставив произвольное изображение.</p>
+		<a href="https://codepen.io/AngelaVelasquez/pen/Eypnq">Пример custom radio</a>
+	</section>
+
+
+
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>

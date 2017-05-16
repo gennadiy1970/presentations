@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  background: #193549;
+  color: #fff;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#image {
+ margin-top: 50px;
+ position: relative;
+ z-index: 10;
+}
+
+.units {
+  width: 500px;
+  margin: auto;
+  border: 10px solid hsla(360, 50%, 100%, 0.3);
+  justify-content: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 90;
+}
+
+.units label {
+  text-align: center;
+}
+
+.controls {
+  position: relative;
+  z-index: 99;
+  width: 500px;
+  margin: auto;
+  border: 10px solid hsla(360, 50%, 100%, 0.3);
+}
+
+.red { color: red; }
+
+
+label {
+  display: flex;
+  width: 450px;
+  margin: 5px auto;
+  justify-content: space-around;
+  text-indent: 10px;
+}
+
+input {
+  width: 100px;
+  text-align: right;
+  margin: auto;
+}
+
+label:nth-last-of-type(odd) {
+  background-color: hsla(360, 50%, 0%, 0.2);
+}
+
+label:nth-last-of-type(even) {
+  background-color: hsla(360, 50%, 100%, 0.1);
+}
+
+label > em {
+  width: 200px;
+  display: inline-block;
+}
+
+label > strong {
+  width: 80px;
+  display: inline-block;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Translate</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h2>Translate</h2>
+      <p>
+        transform:
+        <span class="red"> translate(
+          <em class="grey">x</em>, <em class="grey">y</em>)
+        </span> ||
+        <span class="red">translateX(<em class="grey">x</em>) </span> ||
+        <span class="red">translateY(<em class="grey">y</em>) </span>
+      </p>
+      <form class="units">
+        unit:
+        <label>
+          <em></em>
+          <input type="radio" name="unit" value="px" checked>
+          <span class="red"><strong>&nbsp;&nbsp;px</strong></span>
+        </label>
+         <label>
+          <em></em>
+          <input type="radio" name="unit"  value="em">
+          <span class="red"><strong>&nbsp;em</strong></span>
+         </label>
+         <label>
+           <em></em>
+           <input type="radio" name="unit" value="rem">
+           <span class="red"><strong>rem</strong></span>
+         </label>
+         <label>
+           <em></em>
+           <input type="radio" name="unit" value="%">
+           <span class="red"><strong>&nbsp;&nbsp;&nbsp;%</strong></span>
+         </label>
+      </form>
+    </div>
+    <form class="controls">
+
+      <label>translate(
+        <input type="number" name="translateX" value="0" class="two">,
+        <input type="number" name="translateY" value="0" class="two">)
+      </label>
+
+      <label>translateX
+        <input type="number" name="translateX" value="0" class="one">
+      </label>
+
+      <label>translateY
+        <input type="number" name="translateY" value="0" class="one">
+      </label>
+
+    </form>
+    <div class="image">
+      <img id="image" src="http://pipsum.com/800x500.jpg" alt="image">
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
