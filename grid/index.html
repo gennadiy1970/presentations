@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Grid</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shower list">
+
+	<section class="slide" id="cover">
+		<h2>Grid</h2>
+		<p>
+			<a href="https://www.w3.org/TR/css3-grid-layout/" target="_blank">
+			Спецификация
+		  </a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://caniuse.com/#search=grid" target="_blank">
+				Поддержка браузерами
+			</a>
+		</p>
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<figcaption class="white">
+				<a href="http://caniuse.com/#search=grid%20layout"></a>
+			</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Grid</h2>
+     <p>Grid - это двухмерная система компоновки сайта на основе сетки
+			 <strong>колонка/column - ряд/-row.</strong>
+		 </p>
+		 <img src="pictures/layout.jpg" alt="layout">
+	</section>
+
+	<section class="slide maket">
+		<h2>Принцип построения макета</h2>
+    <ol>
+    	<li>Определяем контейнер <br>
+				<code >.container { display: grid; }</code>
+			</li>
+    	<li>Задаем колонки и стобцы <br>
+				<code> .container {
+					<br>grid-template-columns: ...; <br>
+          grid-template-rows: ... ;	}</code>
+			</li>
+    	<li>Помещаем элементы контейнера по своим местам <br>
+				<code>.item { <br>
+					grid-column: ...;  <br>
+					grid-row: ...; }</code>
+			</li>
+    </ol>
+	</section>
+
+	<section class="slide">
+		<h2>Основные термины: </h2>
+		<p>контейнер
+			<em class="red">container</em>
+			блок со свойством <code>display: grid;</code>
+		</p>
+		<p>элемент
+			<em class="red">item</em>
+			 - прямой потомок контейнера.
+		</p>
+		<img src="pictures/items.jpg" alt="layout">
+		<p>
+			<code>&lt;div class="container"&gt;<br>
+      &nbsp;&nbsp;&lt;div class="item"&gt;&lt;/div&gt;
+      &nbsp;&nbsp;&lt;div class="item"&gt;&lt;/div&gt;
+			&lt;/div&gt;</code>
+		</p>
+		<p>CSS свойства grid относятся либо к container, либо к item.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Основные термины:</h2>
+		<p class="lines"> <em class="red">line</em> разделяющая линия	</p>
+		<p class="lines"><em class="red">track</em> пространство <br> между смежными линиями</p>
+		<p class="lines"><em class="red">gap</em> промежуток <br>между колонками и стобцами</p>
+    <img src="pictures/lines.jpg" alt="layout">
+	</section>
+
+	<section class="slide">
+		<h2>Основные термины:</h2>
+		<p class="lines"><em class="red">cell</em> наименьшая неделимая<br> единица контейнера</p>
+		<p class="lines"><em class="red">area</em> пространство, вмещаюещее<br> одну ячейку и более</p>
+		<img src="pictures/area.jpg" alt="layout">
+	</section>
+
+	<section class="slide">
+		<h2>Dispalay: <em class="red">grid</em> || <em class="red">inline-grid</em></h2>
+		<h4 class="h4-grid h4-dispaly">grid</h4>
+    <div class="block-grid">
+    		<div>1</div>
+    		<div>2</div>
+    		<div>3</div>
+    		<div>4</div>
+    		<div>5</div>
+    		<div>6</div>
+    </div>
+		<h4 class="h4-inline h4-dispaly">inline-grid</h4>
+		<div class="inline-grid">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+		</div>
+		<p><strong>.container{ width:</strong>
+			(if inline-grid =&gt; content, if grid =&gt;  width of parent) }
+		</p>
+	</section>
+
+	<section class="slide">
+    <h2>Grid-template-columns:</h2>
+    <h2>Grid-template-rows:</h2>
+		<p>указывают количество tracks, задавая  </p>
+		<ol>
+			<li>размер track </li>
+			<li>имя линий, образующих track</li>
+		</ol>
+		<p>Далее рассматриваем только Grid-template-columns,
+			<br>т.к. Grid-template-rows использует те же правила.
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Grid-template-columns:</h2>
+		<p class="note">/* задаем 3 колонки */</p>
+		<p><code> 200px 200px 200px</code> </p>
+		<p><code> 1fr 1fr 1fr</code> </p>
+		<p><code> repeat(3, 1fr) </code> </p>
+		<p><code> [line1] 200px [line2] 200px [line3] 200px [line4] </code> </p>
+    <p>
+				<a href="examples/template-column/1.html" target="_blank">Пример:</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+		<p>Ссылки: &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid" target="_blank">Line-based placement</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines" target="_blank">named grid lines</a>
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Grid-template-columns:</h2>
+  	<p class="note">/* автозаполнение */</p>
+		<p><code> repeat(auto-fill, 200px) </code> </p>
+		<p><code> repeat(auto-fill, minmax(200px, 33%)) </code> </p>
+		<p><code> repeat(auto-fill, minmax(200px, 1fr)) </code> </p>
+		<p><code> fit-content(30%) fit-content(40%) fit-content(30%) </code> </p>
+		<p>
+				<a href="examples/autofill/index.html" target="_blank">Пример:</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Grid-auto-columns: </h2>
+		<p class="note">/* для неявно заданного track, <br> например для текста без обертки в container */</p>
+		<p>
+			<code>min-content; </code> &nbsp;&nbsp;&nbsp;&nbsp; ||&nbsp;&nbsp;&nbsp;&nbsp;
+	   	<code>max-content; </code>
+	  </p>
+		<p>
+			<code>100px</code> &nbsp;&nbsp;&nbsp;&nbsp; ||&nbsp;&nbsp;&nbsp;&nbsp;
+			<code>10%</code>  &nbsp;&nbsp;&nbsp;&nbsp; ||&nbsp;&nbsp;&nbsp;&nbsp;
+			<code>10rem</code>
+		</p>
+		<p><code>0.8fr</code> </p>
+		<p><code>minmax ()</code> </p>
+		<p><code>fit-content()</code> </p>
+	</section>
+
+	<section class="slide">
+		<h2>Justify-items / rows / : </h2>
+     <p>
+			 <em class="red">start</em> ||
+			 <em class="red">end</em> ||
+			 <em class="red">center</em> ||
+			 <em class="red">stretch</em>
+		 </p>
+		 <p>Расположение контента:
+			 <a href="examples/justify-items/index.html" target="_blank">пример</a>
+		 </p>
+		 <img src="../../pictures/justify-item.jpg" alt="justify-item" width="500">
+	</section>
+
+	<section class="slide">
+		<h2>Align-items / column</h2>
+		<p>
+			<em class="red">start</em> ||
+			<em class="red">end</em> ||
+			<em class="red">center</em> ||
+			<em class="red">stretch</em>
+		</p>
+		<p>Расположение контента:
+			<a href="examples/align-items/index.html" target="_blank">пример</a>
+		</p>
+		<img src="../../pictures/align-items.jpg" alt="align-items" width="500">
+	</section>
+
+	<section class="slide">
+		<h2>Justify-content / rows / : </h2>
+		<p>
+			<em class="red">start</em> ||
+			<em class="red">end</em> ||
+			<em class="red">center</em> ||
+			<em class="red">stretch</em> ||
+			<em class="red">space-around </em> ||
+			<em class="red">space-between </em> ||
+			<em class="red">space-evenly </em>
+		</p>
+		<p>Расположение контента:
+			<a href="examples/justify-content/index.html" target="_blank">пример</a>
+		</p>
+		<img src="../../pictures/justify-content.jpg" alt="justify-content" width="500">
+	</section>
+
+	<section class="slide">
+		<h2>Align-content / column / : </h2>
+		<p>
+			<em class="red">start</em> ||
+			<em class="red">end</em> ||
+			<em class="red">center</em> ||
+			<em class="red">stretch</em> ||
+			<em class="red">space-around </em> ||
+			<em class="red">space-between </em> ||
+			<em class="red">space-evenly </em>
+		</p>
+		<p>Расположение контента:
+			<a href="examples/align-content/index.html" target="_blank">пример</a>
+		</p>
+		<img src="../../pictures/align-content.jpg" alt="align-content" width="500">
+	</section>
+
+	<section class="slide">
+		<h2>Grid Items</h2>
+		<ul>
+			<li>grid-column-start:</li>
+			<li>grid-column-end:</li>
+			<li>grid-row-start:</li>
+			<li>grid-row-end:</li>
+		</ul>
+     <p>в качестве значений могут быть</p>
+		 <ol>
+		 	<li>номера или имена линий</li>
+		 	<li>span (число) - количество объединенных ячеек</li>
+		 	<li>span (имя линии) - объединение ячеек до указанной линии</li>
+		 	<li>auto</li>
+		 </ol>
+	</section>
+
+	<section class="slide">
+		<h2>Grid Items</h2>
+		<p class="note">сокращенная запись (через <em class="red">/</em> )</p>
+		<ul>
+			<li>grid-column: <code>start / end</code></li>
+			<li>grid-row: <code>start / end</code></li>
+		</ul>
+		 <ol>
+		 	<li>номера или имена линий</li>
+		 	<li>span (число) - количество объединенных ячеек</li>
+		 	<li>span (имя линии) - объединение ячеек до указанной линии</li>
+		 	<li>auto</li>
+		 </ol>
+		 <p>Пример: <code>
+grid-column: 1 / span 2;<br>
+grid-row: 1 / span 3; <line-end></line-end>;
+		 </code>
+	 </p>
+	</section>
+
+	<section class="slide">
+		<h2>Areas</h2>
+		<p>Conainer  - grid-template-areas:<br>
+		Items  - grid-areas:</p>
+		<p><a href="examples/areas/index.html" target="_blank">Пример:</a> <code>
+			.container {
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-areas: "header header header header"
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;"nav main main aside"
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;"footer footer footer footer"; }
+				<br>.item-header { grid-area: header; }
+				<br>.item-nav { grid-area: nav; }
+				<br>.item-main { grid-area: main; }
+				<br>.item-aside { grid-area: aside; }
+				<br>.item-footer { grid-area: footer; }
+		</code>
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2 >Сетка 12-колонок на основе grid</h2>
+		<p><a href="examples/span/index.html" target="_blank">Пример</a></p>
+		<img src="../../pictures/span.jpg" alt="12 колонок" width="800">
+	</section>
+
+	<section class="slide">
+		<h2 >Галиреи на основе grid</h2>
+		<p><a href="examples/gallery/index.html" target="_blank">Пример</a></p>
+		<img src="../../pictures/gallery.jpg" alt="12 колонок" width="800">
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Спасибо за внимание!</h2>
+	</section>
+
+	<!-- <footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer> -->
+
+	<div class="progress"></div>
+
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>

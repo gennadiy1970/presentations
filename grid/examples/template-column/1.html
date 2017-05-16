@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template-column</title>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Grid-template-columns</h1>
+    <section class="fixed">
+      <h1><code> 200px 200px 200px</code> </h1>
+      <ul class="grid-container">
+          <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+          <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="fluid">
+      <h1>1fr 1fr 1fr</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+        <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="responsive">
+      <h1>repeat(3, 1fr)</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+        <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="explicity-placed">
+      <h1>[line1] 200px [line2] 200px [line3] 200px [line4]</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+        <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+
+</html>

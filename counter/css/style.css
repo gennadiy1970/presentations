@@ -1,0 +1,62 @@
+.container-for-boxes {
+  /* Создает новый счетчик для каждого дочернего тега */
+  counter-reset: element;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: #f3f3ea;
+  text-align: center;
+  vertical-align: top;
+}
+
+.container-for-boxes > .box > .box {
+  background-color: #e3e3ea;
+  margin-top: .25rem;
+}
+
+/* используем псевдоэлемент для отображения счетчика*/
+/* инкрементировуется счетчик текущего уровня вложенности */
+.container-for-boxes  > .box::before {
+  /* инкрементировуется счетчик всех уровней вложенности */
+  /*.box::before {*/
+  counter-increment: element 10;
+  content: counters(element, ".");
+  color: #333;
+  line-height: 50px;
+}
+
+.list {
+  margin-top: 250px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: lists;
+  border: 4px dotted blue;
+  width: 200px;
+}
+
+li::before {
+  counter-increment: lists;
+  content: counters(lists, ".");
+}
+
+.list > ol {
+  background-color: #e88;
+}
+
+.list > ol > li > ol {
+  background-color: #88e;
+}
+
+.list > ol > li > ol > li > ol {
+  background-color: #8e8;
+}
+
+.list > ol > li > ol > li > ol + ol{
+  background-color: #4a4;
+  color: white;
+}

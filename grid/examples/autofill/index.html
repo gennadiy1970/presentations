@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auto-Fill</title>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Auti-fill</h1>
+    <section class="fixed">
+      <h1>repeat(auto-fill, 200px)</h1>
+      <ul class="grid-container">
+          <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+          <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+          <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="fluid">
+      <h1>repeat(auto-fill, minmax(200px, 33%))</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+        <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="responsive">
+      <h1>repeat(auto-fill, minmax(200px, 1fr))</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="http://lorempixel.com/360/270" /></li>
+        <li class="item"><img src="http://pipsum.com/360x270.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+    <section class="explicity-placed">
+      <h1>fit-content(30%) fit-content(40%) fit-content(30%)</h1>
+      <ul class="grig-container">
+        <li class="item"><img src="../../pictures/270x180blue.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270orange.jpg" /></li>
+        <li class="item"><img src="../../pictures/270x180green.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270yellow.jpg" /></li>
+        <li class="item"><img src="../../pictures/360x270red.jpg" /></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
